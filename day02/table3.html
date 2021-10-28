@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>표 태그와 스타일 속성</title>
+    <style>
+        table{
+            width: 300px;
+            height: 100px;
+        }
+        table, td{
+            border: 1px solid #ccc;
+        }
+    </style>
+</head>
+<body>
+    <h2>행 합치기</h2>
+    <table>
+       <tr>
+           <td rowspan="2"></td>
+           <td></td>
+           <td></td>
+       </tr>
+       <tr>
+           <td></td>
+           <td></td>
+       </tr>
+       <!-- rowspan은 행합치기 -->
+    </table>
+
+    <h2>열 합치기</h2>
+    <table>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="3"></td>
+        </tr>
+        <!-- colspan은 열 합치기 -->
+     </table>
+</body>
+</html>
