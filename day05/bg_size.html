@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>배경 이미지 크기 조정</title>
+    <style>
+        div{
+            width: 800px;
+            height: 600px;
+            border: 1px solid #ccc; 
+            margin: 10px;
+        }
+        #bg1{
+            background: url("images/bg5.jpg");
+            background-size: auto;
+        }
+        #bg2{
+            background: url("images/bg5.jpg") no-repeat;
+            background-size: 200px;  /*이미지의 가로 크기(width) 세로 자동 조정*/
+        }
+        #bg3{
+            background: url("images/bg5.jpg") no-repeat top right;
+            background-size: 60%;  /*이미지의 가로 크기(width) 상대 크기*/
+        }
+        #bg4{
+            background: url("images/bg5.jpg") no-repeat;
+            background-size: contain;  /*크기가 축소되어 비율로 조정*/
+        }
+        #bg5{
+            background: url("images/bg5.jpg") no-repeat;
+            background-size: cover;  /*크기가 축소되어 꽉 채워 표시*/
+        }
+    </style>
+</head>
+<body>
+    <div id="bg1"></div>
+    <div id="bg2"></div>
+    <div id="bg3"></div>
+    <div id="bg4"></div>
+    <div id="bg5"></div>
+</body>
+</html>

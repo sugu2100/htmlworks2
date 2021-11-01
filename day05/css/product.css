@@ -1,0 +1,28 @@
+#container{
+    width: 1000px;
+    margin: 20px auto;
+    border: none;
+}
+div{
+    width: 700px;
+    margin: 0 auto;
+    border: 1px dotted #333;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+#description{
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
+#description p{line-height: 2em;}
+#receipe ol li{line-height: 2em;}
+#package{
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+table, th, td{
+    border: 1px solid #ccc;
+    border-collapse: collapse;
+}
+th, td{padding: 10px 20px;}
+caption{margin-bottom: 10px;}
