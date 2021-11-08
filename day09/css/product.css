@@ -1,0 +1,14 @@
+*{margin:0; padding: 0;}
+#container{width: 1000px; margin: 30px auto;}
+h1{text-align: center;}
+.prod-list{list-style: none; margin: 30px 0; }
+.prod-list li{display: inline-block; position: relative; 
+    overflow: hidden; margin: 5px 10px;}
+.prod-list li:nth-of-type(1){padding-left: 10px;}
+.prod-list img{float: left;}   /* 약간의 차이를 없앰 */
+.prod-list .caption{width: 300px; height: 200px; background-color: rgba(0, 0, 0, 0.6); 
+    position: absolute; top:200px; transition: transform 0.6s;}
+.prod-list .caption h2{padding: 20px 0 10px 0; }
+.prod-list .caption h2, p{color: #fff; text-align: center;
+     line-height: 2em;}
+.prod-list li:hover .caption{transform: translateY(-200px);}

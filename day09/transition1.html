@@ -9,22 +9,25 @@
         .tr1{
             width: 100px;
             height: 100px;
-            background-color: #00f;
+            background-color: rgb(255, 217, 0);
 
             position: absolute;
             top: 100px;
             left: 200px;
 
-            /*transition-property: width, height;  속성-너비, 높이
-            transition-duration: 2s, 1s;  지속시간 -2초, 1초*/  
+            /*transition-property: width, height;  /*속성-너비, 높이*/
+            /*transition-duration: 2s, 1s;  /*지속시간 -2초, 1초*/
 
-            transition: width, height, transform, 1s, 2s, 2s;  /* 콤머로 구분 - 주의!! */
-            /*transition: all 2s; /*모든 속성에 동일한 시간 설정 - all 사용*/
+            /*transition: width, height, transform, 1s, 2s, 2s;  /* 콤머로 구분 - 주의!! */
+            transition: all 2s ease-in-out; /*모든 속성에 동일한 시간 설정 - all 사용*/
+            /* ease-in : 천천히 시작*/
+            /* ease-out : 천천히 끝남*/
+            /* ease-in-out : 천천히 시작하고 천천히 끝남*/
         }
         .tr1:hover{
             width: 200px;
             height: 150px;
-            transform: rotate(180deg);
+            transform: rotate(-180deg);
         }
     </style>
 </head>
